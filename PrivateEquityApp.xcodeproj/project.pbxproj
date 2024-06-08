@@ -11,6 +11,7 @@
 		B0E368DD2C13C16500AEC987 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E368DC2C13C16500AEC987 /* ContentView.swift */; };
 		B0E368DF2C13C16600AEC987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E368DE2C13C16600AEC987 /* Assets.xcassets */; };
 		B0E368E22C13C16600AEC987 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E368E12C13C16600AEC987 /* Preview Assets.xcassets */; };
+		B0E368EA2C13E74F00AEC987 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = B0E368E92C13E74F00AEC987 /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E368EA2C13E74F00AEC987 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PrivateEquityApp;
+			packageProductDependencies = (
+				B0E368E92C13E74F00AEC987 /* MarkdownUI */,
+			);
 			productName = PrivateEquityApp;
 			productReference = B0E368D72C13C16500AEC987 /* PrivateEquityApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B0E368CE2C13C16500AEC987;
+			packageReferences = (
+				B0E368E82C13E74F00AEC987 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+			);
 			productRefGroup = B0E368D82C13C16500AEC987 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0E368E82C13E74F00AEC987 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B0E368E92C13E74F00AEC987 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0E368E82C13E74F00AEC987 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0E368CF2C13C16500AEC987 /* Project object */;
 }
